@@ -2,11 +2,9 @@
 
 一个针对js-xlsx的简单封装，原项目大而全不利于新手上手，我主要针对前端直接导出做一简单封装。A simple package for js-xlsx
 
-## 基于XLSX.js的前端ms-excle(xml)文件导出调研
+### 使用方法
 
-###使用方法
-
-####1.0.0
+#### 1.0.0
 
 - 在浏览器头引入依赖文件
 
@@ -33,7 +31,7 @@
 ```
 >fileName即导出的文件名，obj即需要导出的数据，格式为数组对象。
 
-###原理介绍
+### 原理介绍
 
 >参考[js-xlsx](https://github.com/SheetJS/js-xlsx)库的Writing Workbooks分类下的Browser save file方法
 
@@ -43,7 +41,7 @@
 
 - [shim.js](https://github.com/es-shims/es5-shim)为对ECMA5标准下的部分原生对象的扩展
 
-###遗留问题与改进项
+### 遗留问题与改进项
 
 - 当前不支持多维数组，即只能生成一张表。框架支持多张表，这个后续会补充。暂时的需求也没有多张表
 
