@@ -1,0 +1,22 @@
+{
+  "name": "js-xlsx-browers",
+  "version": "1.0.0",
+  "description": "一个针对js-xlsx的简单封装，原项目大而全不利于新手上手，主要针对前端直接导出做一简单封装。A simple package for js-xlsx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincent-xw/js-xlsx-browers.git"
+  },
+  "keywords": [
+    "js-xlsx"
+  ],
+  "author": "vince",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vincent-xw/js-xlsx-browers/issues"
+  },
+  "homepage": "https://github.com/vincent-xw/js-xlsx-browers#readme"
+}
