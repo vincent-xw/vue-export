@@ -11,8 +11,10 @@
 		getHeader : function(_headers) {
 			var header = _headers.map(function(v, i) {
 				return Object.assign({}, {v: v, position: String.fromCharCode(65+i) + 1 })
-			}).reduce(function(prev, next) { 
-				return Object.assign({}, prev, {[next.position]: {v: next.v}})
+			})
+			.reduce(function(prev, next) { 
+				var position = next.position;
+				return Object.assign({}, prev, {position: {v: next.v}})
 			}, {});
 			return header;
 		},
@@ -26,7 +28,8 @@
 				return prev.concat(next);
 			})
 			.reduce(function(prev, next) { 
-				return Object.assign({}, prev, {[next.position]: {v: next.v}})},{}
+				var position = next.position;
+				return Object.assign({}, prev, {position: {v: next.v}})},{}
 			);
          	return data;
 		}
